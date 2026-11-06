@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'hello_world', to: 'hello_world#index'
+  get 'wii_menu', to: 'wii_menu#index'
   root to: "home#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
