@@ -159,7 +159,7 @@ GEM
     io-event (1.22.3)
     io-stream (0.14.0)
       openssl (>= 3.3)
-    irb (1.18.0)
+    irb (1.19.0)
       pp (>= 0.6.0)
       prism (>= 1.3.0)
       rdoc (>= 4.0.0)
@@ -198,9 +198,9 @@ GEM
     mini_magick (5.4.0)
       logger
     mini_mime (1.1.5)
-    minitest (6.0.6)
+    minitest (6.1.0)
       drb (~> 2.0)
-      prism (~> 1.5)
+      prism (>= 1.5, < 3)
     msgpack (1.8.7)
     net-imap (0.6.8)
       date
@@ -314,21 +314,21 @@ GEM
       prism (>= 1.6.0)
       rbs (>= 4.0.0)
       tsort
-    react_on_rails (17.2.0)
+    react_on_rails (17.2.1)
       addressable
       connection_pool
       execjs (~> 2.5)
       rails (>= 5.2)
       rainbow (~> 3.0)
       shakapacker (>= 6.0)
-    react_on_rails_pro (17.2.0)
+    react_on_rails_pro (17.2.1)
       async (>= 2.29)
       async-http (~> 0.95)
       execjs (~> 2.9)
       io-endpoint (~> 0.17.0)
       jwt (>= 2.8, < 4)
       nokogiri (>= 1.12, < 2)
-      react_on_rails (= 17.2.0)
+      react_on_rails (= 17.2.1)
     regexp_parser (2.13.1)
     reline (0.7.0)
       io-console (~> 0.5)
@@ -450,7 +450,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.4, >= 8.1.4.1)
-  react_on_rails (= 17.2)
+  react_on_rails (= 17.2.1)
   react_on_rails_pro (~> 17.2)
   rubocop-rails-omakase
   selenium-webdriver
