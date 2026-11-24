@@ -1,24 +1,47 @@
-# README
+# Alexis Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails application with React on Rails.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Ruby 3.4.12
+- Node.js and npm
+- PostgreSQL
 
-* System dependencies
+## Setup
 
-* Configuration
+Install dependencies and prepare the database:
 
-* Database creation
+```sh
+npm install-scripts approve @swc/core@1.16.22
+npm install-scripts approve @parcel/watcher@2.6.0
+sudo apt install postgresql postgresql-contrib
+sudo systemctl enable --now postgresql
+sudo -u postgres createuser --createdb "$USER"
+gem install foreman
+bin/setup --skip-server
+```
 
-* Database initialization
+Make sure PostgreSQL is running and your local user can create databases.
 
-* How to run the test suite
+## Run the app
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+bin/dev
+```
 
-* Deployment instructions
+The app will open at <http://localhost:3000>.
 
-* ...
+## Run tests
+
+Run the Rails test suite:
+
+```sh
+bin/rails test
+```
+
+Run the full local CI checks:
+
+```sh
+bin/ci
+```
